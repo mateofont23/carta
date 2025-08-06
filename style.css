@@ -1,9 +1,107 @@
 
-img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+body {
+  margin: 0;
+  padding: 0;
+  background: #17223d;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tokenu-login-wrapper {
+  display: flex;
+  max-width: 900px;
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-form {
+  width: 50%;
+  padding: 40px 30px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form .logo {
+  width: 150px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.login-form .welcome {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #17223d;
+}
+
+.login-form label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #17223d;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-form button {
+  margin-top: 30px;
+  padding: 12px;
+  background: #f2b018;
+  color: #17223d;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #e1a918;
+}
+
+.login-banner {
+  width: 50%;
+  background: #f2b018;
+  color: #17223d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 30px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.login-banner .slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+
+
+.login-banner .slide.active {
+  opacity: 1;
+  position: relative;
 }
 
