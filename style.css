@@ -15,6 +15,14 @@ body {
   background-image: linear-gradient(to bottom right, #300A43, #493573, #B265C5, #310538);
 }
 
+img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 .splash-instructions {
   position: absolute;
   top: 0;
